@@ -1,0 +1,44 @@
+git clone https://github.com/вашето-потребителско-име/вашето-репозитори.git
+cd вашето-репозитори
+
+echo "abcdefghij" > sample.txt
+git add sample.txt
+git commit -m "Added sample.txt to Master Branch"
+git push origin master
+
+git checkout -b new-branch
+echo "new-branch - change" >> sample.txt
+git add sample.txt
+git commit -m "Modified sample.txt in the new-branch"
+
+git checkout master
+git merge new-branch
+
+# Разрешаване на конфликтите и продължаване на сливането
+# Отваряне на файла в текстов редактор и ръчно разрешаване на конфликтите
+git add sample.txt
+git merge --continue
+
+git push origin master
+
+# Команди за клониране и добавяне на файл в Master Branch
+git clone https://github.com/вашето-потребителско-име/вашето-репозитори.git
+cd вашето-репозитори
+echo "abcdefghij" > sample.txt
+git add sample.txt
+git commit -m "Added sample.txt to Master Branch"
+
+git push origin master
+
+# Команди за създаване на нов клон, промяна на файла и обединяване на branch-овете
+git checkout -b new-branch
+echo "new-branch - change" >> sample.txt
+git add sample.txt
+git commit -m "Modified sample.txt in the new-branch"
+git checkout master
+git merge new-branch
+# Ако има конфликт, разрешете го и продължете
+git add sample.txt
+git merge --continue
+git push origin master
+
